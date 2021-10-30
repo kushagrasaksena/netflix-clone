@@ -2,17 +2,16 @@ import "./App.css";
 import Row from "./Row.js";
 import requests from "./request.js";
 
-function App() {
+// function App() {
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
         {/* Hey Header! */}
-
         <Row
           title="Netflix Originals"
           fetchUrl={requests.fetchNetflixOriginals}
-          isLargeRow={true}
-        />
+          isLargeRow={true}/>
         <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
         <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
         <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
@@ -25,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+// export default App;
